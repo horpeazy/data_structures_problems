@@ -1,0 +1,11 @@
+I chose to use a doubly linked list to keep track of the order with which operations are performed in the cache because it could make insertion and deletion happen in
+constant time as opposed to using an array.I also used the built-in python dictionary as my hash map to reduce the amount of code i have to write because it's basically
+the same as writing an hash map from scratch.
+
+Time Complexity:
+All of the operations carried out in the cache happen in constant time so the time complexity of the solution is O(1)
+
+Space Complexity:
+    The amount of space used is equal to the number to items added to the cache. i.e O(n)
+
+PS: an easier implementation would have been to use python's OrderedDict

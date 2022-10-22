@@ -1,0 +1,6 @@
+The blockchain was build using s sinlgy linked list and the insertion into the block happens at constant time
+
+O(1)
+
+It blockchain instance only stores the head at any particular given moment so the space complexity is
+ O(1)

@@ -1,0 +1,8 @@
+Time Complexity:
+    Assuming that in each folder, there and n files(ordinary files and folders altogether) and m files. Then in each folder the time complexity of the operation performed is
+    O(n) = O(m) + O(n -m) + c
+
+Space Complexity:
+    If all the files match the the space complexity is O(n)
+
+    

@@ -1,0 +1,29 @@
+# Union
+
+I chose to sort the linked list before finding the union because this reduces the time complexity of the algorithm substantially.
+I also decided to use the prepend method on the linked list because it happens in constant time as opposed to the append method.
+
+The functions first sorts the linked lists using the merge sort algorithm which has a time complexity of O(nlogn) it the loops through
+the sorted list and performs a series of operations that happens in constant that, the time complexity for each traversal is O(n)
+
+The time complexity of of the whole functions considering both inputs in the worst case scenerio is
+O(nlogn + mlogm + m + n)
+
+If the input is very large say, 100 million, then the time complexity of the solution can be approximated to be
+
+O(nlogn + mlogm)
+
+Space Complexity:
+    The Space complexity of the solution is O(n + m)
+
+# Intersection
+
+I also chose to sort the linked before finding the intersection for the same reason as above.
+
+The algorithm is similar to that of the Union, it uses the merge sort algorithm to sort the linked list which has a time complexity of 
+O(nlogn) in the worst case and then loops through both lists in the worst case(this will not happen on average) and the complexity of 
+this operation is O(n + m). The resultant time complexity of the routine is O(nlogn + mlogm + m + n) which can be approximated to O(nlogn + mlogm) for very large input
+
+Space Complexity:
+    if the result of the operation is to be stored then the Space complexity
+    will be the given by the size of the length of the of smallest list O(n)

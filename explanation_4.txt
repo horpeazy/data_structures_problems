@@ -1,0 +1,9 @@
+I decided to use recursion because it's cleaner.
+
+The recusrive function is dependent on the size of the user and group in a particular group instance
+assuming that there are n users and m group then the recusrive function is
+
+T(N) = T(n) + T(m) + c
+
+Space Complexity:
+The function doesn't store any variable at run time except for function calls on the stack

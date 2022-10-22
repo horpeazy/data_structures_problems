@@ -1,0 +1,28 @@
+I chose to use the minHeap data structure because it has a better time complexity for insertion compared to a sorted linked list.
+
+# Huffman Encoding:
+    Time Complexity:
+    The Huffman Encoding consists of different operations, to start with, the data input is traversed and each element and it number of occurence is stored
+    in a dictionary, this operation takes O(n), the they are each inserted into the minheap have a total time complexity of O(nlogn), then two nodes are popped
+    from the heap and then one element is reinserted into the head with an overall time complexity of O(3nlogn)<==>O(nlogn), the assign bit operation has a time complexity of
+    O(n) and the get_binary_code also has a time complexity of O(n), the last for loop in the function also has a time complexity of O(n).
+
+    Summing the complexities of all these operations we have :
+        O(n) + O(nlogn) + 0(nlogn) + O(n) + O(n) + O(n)
+        = O(n) + O(nlogn)
+        = O(nlogn)
+
+    So the overall time complexity of the Huffman Encoding is O(nlogn)
+
+    This solution assumes a worst case where all characters in data are unique
+
+    Space Complexity:
+        O(n) where n is the characters in data
+
+# Huffman Decoding
+
+    The Huffman Decoding algorithm is totally dependent on the get_char function
+    which has a time complexity of O(n) on average
+
+    Space Complexity:
+        O(1). Stores the tree 
